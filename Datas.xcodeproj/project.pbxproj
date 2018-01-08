@@ -15,6 +15,7 @@
 		24D1189B2003D1B4003D7968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D1189A2003D1B4003D7968 /* Assets.xcassets */; };
 		24D1189E2003D1B4003D7968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D1189C2003D1B4003D7968 /* LaunchScreen.storyboard */; };
 		24D118A92003D1B4003D7968 /* DatasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D118A82003D1B4003D7968 /* DatasTests.swift */; };
+		24D118B62003F42E003D7968 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D118B52003F42E003D7968 /* SignInViewController.swift */; };
 		966AF98EA9705DF05BB1CF0D /* Pods_Datas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F84F80026CBFFFCEE5800B /* Pods_Datas.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		24D118A42003D1B4003D7968 /* DatasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D118A82003D1B4003D7968 /* DatasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasTests.swift; sourceTree = "<group>"; };
 		24D118AA2003D1B4003D7968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D118B52003F42E003D7968 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		267B8F2AF41553A240E21505 /* Pods_DatasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAF0D3E63D613F76B425665 /* Pods-Datas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Datas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Datas/Pods-Datas.release.xcconfig"; sourceTree = "<group>"; };
 		8C55EB869A40E9EEB2D894C0 /* Pods-DatasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatasTests/Pods-DatasTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				24D118902003D1B4003D7968 /* AppDelegate.swift */,
 				24D118922003D1B4003D7968 /* ViewController.swift */,
 				24D118942003D1B4003D7968 /* Main.storyboard */,
+				24D118B32003F41D003D7968 /* Controllers */,
 				24D1189A2003D1B4003D7968 /* Assets.xcassets */,
 				24D1189C2003D1B4003D7968 /* LaunchScreen.storyboard */,
 				24D1189F2003D1B4003D7968 /* Info.plist */,
@@ -109,6 +112,22 @@
 				24D118AA2003D1B4003D7968 /* Info.plist */,
 			);
 			path = DatasTests;
+			sourceTree = "<group>";
+		};
+		24D118B32003F41D003D7968 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24D118B42003F41D003D7968 /* Register */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		24D118B42003F41D003D7968 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				24D118B52003F42E003D7968 /* SignInViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		274CD8A80E54A6AEB96892D9 /* Pods */ = {
@@ -324,10 +343,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Datas/Pods-Datas-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D118B62003F42E003D7968 /* SignInViewController.swift in Sources */,
 				24D118992003D1B4003D7968 /* Datas.xcdatamodeld in Sources */,
 				24D118932003D1B4003D7968 /* ViewController.swift in Sources */,
 				24D118912003D1B4003D7968 /* AppDelegate.swift in Sources */,
@@ -501,6 +523,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQGRM29J3;
 				INFOPLIST_FILE = Datas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Datas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLQGRM29J3;
 				INFOPLIST_FILE = Datas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Datas;
 				PRODUCT_NAME = "$(TARGET_NAME)";

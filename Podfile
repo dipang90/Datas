@@ -8,6 +8,8 @@ target 'Datas' do
 
   # Pods for Datas
   pod 'TextFieldEffects'
+  
+  pod 'IQKeyboardManager'
 
   target 'DatasTests' do
     inherit! :search_paths
